@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapna Cloth Store Billing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script> <!-- Razorpay Script -->
+</head>
+<body>
+    <header>
+        <h1>Swapna Cloth Store Billing</h1>
+    </header>
+
+    <main>
+        <section id="items">
+            <h2>Available Items</h2>
+        </section>
+
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <div id="total">Total: ₹0.00</div>
+            <button id="checkout">Checkout</button>
+        </section>
+    </main>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <h2>Invoice</h2>
+            <ul id="invoice-items"></ul>
+            <p id="subtotal"></p>
+            <p id="gst"></p>
+            <p id="final-total"></p>
+            <button id="pay-now">Pay Now</button>
+            <button id="print-invoice">Print Invoice</button>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Swapna Cloth Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
